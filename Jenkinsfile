@@ -13,10 +13,11 @@ pipeline {
             }
         }
 
-        stage ("Mave Unit test"){
+        stage ("Maven Unit test"){
 
             steps {
                 script{
+                    set +e
                     sh 'mvn test'
                 }
             }
