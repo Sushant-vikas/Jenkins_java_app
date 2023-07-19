@@ -16,7 +16,7 @@ pipeline {
         stage ("Mave Unit test"){
 
             steps {
-                scripts{
+                script{
                     sh 'mvn test'
                 }
             }
